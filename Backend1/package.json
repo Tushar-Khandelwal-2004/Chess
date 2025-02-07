@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node ./src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@types/ws": "^8.5.14",
+    "chess.js": "^1.0.0",
     "typescript": "^5.7.3",
     "ws": "^8.18.0"
   }
