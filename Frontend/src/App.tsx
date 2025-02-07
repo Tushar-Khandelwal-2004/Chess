@@ -8,12 +8,14 @@ import Game from './pages/Game';
 function App() {
 
   return (
-   <Router>
+   <div className='h-screen bg-[#302E2B]'>
+    <Router>
       <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/game' element={<Game/>}/>
       </Routes>
    </Router>
+   </div>
   )
 }
 
