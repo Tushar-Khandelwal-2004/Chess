@@ -8,7 +8,7 @@ import Game from './pages/Game';
 function App() {
 
   return (
-   <div className='h-screen bg-[#302E2B]'>
+   <div className='min-h-screen bg-[#302E2B]'>
     <Router>
       <Routes>
         <Route path='/' element={<Landing/>}/>

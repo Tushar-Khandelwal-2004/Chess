@@ -1,26 +1,43 @@
 import ChessBoard from "../assets/PMpDs83aQVeeoNw4nyNukw.webp";
+import Pawn from "../assets/kisspng-chess-piece-king-chessboard-board-game-black-chess-5a8e3e9d105086.4309410015192715810668.png"
 function Landing() {
     return (
-        <div className="grid md:grid-cols-2 gap-4 p-4 pt-10">
-
-            <div className="order-1 md:order-2 bg-green-400 text-white p-4 pt-12 h-[90vh]  rounded-lg shadow-md">
-                <div>
-                    <h1 className="text-[4vw] font-bold text-center leading-tight tracking-wide">Play Chess Online</h1>
-                    <h1 className="text-[4vw] font-bold text-center leading-tight"> on the #1 Site!</h1>
+        <div className="text-zinc-50 grid  md:grid-cols-2">
+            <div className="order-1 md:order-2  pt-20  text-center bg--300 px-10 flex flex-col items-center h-[90vh]">
+                <div className="text-4xl font-bold md:text-6xl ">
+                    <div>
+                        Play Chess Online
+                    </div>
+                    <div>
+                        on the #1 Site!
+                    </div>
                 </div>
-                <div className="bg-red-300 flex justify-between item-center mt-[2vw] ">
+                <div className=" flex w-100 justify-between items-center mt-10">
                     <div className="flex">
-                        <h2 className="text-white font-bold ">18,171,168&nbsp;</h2>
-                        <h2 className="text-gray-500">Games Today</h2>
+                        <div className="font-bold ">18,184,935&nbsp;</div>
+                        <div className="text-gray-400">Games Today</div>
                     </div>
                     <div className="flex">
-                        <h2 className="text-white font-bold ">226,817&nbsp;</h2>
-                        <h2 className="text-gray-500">Playing Now</h2>
+                        <div className="font-bold ">148,018&nbsp;</div>
+                        <div className="text-gray-400">Playing Now</div>
+                    </div>
+                </div>
+                <div className="bg-[#81B64C] flex h-24 w-100  mt-10 py-3 px-5 rounded-xl gap-10">
+                    <div className="overflow-hidden items-center ">
+                        <img src={Pawn} className="h-[90%]"/>
+                    </div>
+                    <div className="flex flex-col justify-center gap-1 cursor-pointer ">
+                        <div className="text-2xl font-bold text-left">
+                            Play Online
+                        </div>
+                        <div>
+                            Play with someone at your level!
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="order-2 md:order-1  w-full h-full  flex justify-center">
-                <img src={ChessBoard} alt="chessboard" className="h-[40vw] rounded-lg" />
+            <div className="order-2 md:order-1  md:block px-10 h-[90vh] overflow-hidden md:pt-10">
+            <img src={ChessBoard} className="w-full rounded-lg"/>
             </div>
         </div>
     );
