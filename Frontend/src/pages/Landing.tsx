@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import ChessBoard from "../assets/PMpDs83aQVeeoNw4nyNukw.webp";
 import Pawn from "../assets/kisspng-chess-piece-king-chessboard-board-game-black-chess-5a8e3e9d105086.4309410015192715810668.png"
 function Landing() {
+    const navigate=useNavigate();
+
     return (
         <div className="text-zinc-50 grid  md:grid-cols-2">
             <div className="order-1 md:order-2  pt-20  text-center bg--300 px-10 flex flex-col items-center h-[90vh]">
@@ -22,7 +25,7 @@ function Landing() {
                         <div className="text-gray-400">Playing Now</div>
                     </div>
                 </div>
-                <div className="bg-[#81B64C] flex h-24 w-100  mt-10 py-3 px-5 rounded-xl gap-10">
+                <div onClick={()=>navigate("/game")} className="bg-[#81B64C] flex h-24 w-100  mt-10 py-3 px-5 rounded-xl gap-10">
                     <div className="overflow-hidden items-center ">
                         <img src={Pawn} className="h-[90%]"/>
                     </div>
